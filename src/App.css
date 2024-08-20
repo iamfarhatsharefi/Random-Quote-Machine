@@ -1,38 +1,111 @@
+@import url(https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
+  font-family: "Lora", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #3B3F51;
+}
+
+h2,
+a {
+  text-align: center;
+  font-family: sans-serif;
+  color: #F8F9FA;
+}
+
+#quote-box {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  color: #E2E8F0;
+  text-align: left;
+  background-color: #1C2541;
+  border-radius: 30px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.quote-author {
+  width: 100%;
+  clear: both;
+  padding-top: 20px;
+  font-size: 1em;
+  text-align: right;
+}
+
+#text {
+  text-align: left;
+  width: 100%;
+  font-size: 1.3em;
+}
+
+.buttons {
+  width: 100%;
+  margin: auto;
+  display: block;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button {
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  background-color: #7EBDC3;
+  outline: none;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 10px 20px;
+  margin-top: 30px;
+  color: #1C2541;
+  cursor: pointer;
+  transition: 0.3s ease-in;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#tweet-quote,
+#tumblr-quote {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 1.5em;
+  color: #F8F9FA;
+  transition: 0.3s ease-in;
+}
+
+.button:hover,
+#tweet-quote:hover,
+#tumblr-quote:hover {
+  color: #1C2541;
+  background-color: #F3D250;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#new-quote {
+  margin-top: 20px;
+}
+
+@media (min-width: 700px) {
+  #quote-box {
+    width: 60vw;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 1000px) {
+  #quote-box {
+    width: 50vw;
   }
-  to {
-    transform: rotate(360deg);
+
+  .quote-text {
+    font-size: 1.7em;
   }
 }
