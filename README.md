@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Random Quote Machine 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description 📝
+The Random Quote Machine is a web application that generates random motivational quotes at the click of a button. This simple and elegant app fetches quotes from an API and allows users to share their favorite quotes on social media platforms like Twitter and Tumblr. Designed with a clean and responsive interface, the Random Quote Machine provides users with a delightful experience across all devices.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Demo 📸
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Demo](./src/images/ran.png)
+![FreeCodeCamp](./src/images/freecodecamp.png)
+<br>
+ [Live-link](https://66c0c47db5731c8f34cdbfdf--lucent-fox-8ac766.netlify.app/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Technologies Used 🛠️
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- HTML
+- CSS
+- JAVASCRIPT
+- REACT.JS
 
-### `npm run build`
+## Installation 💻
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Installation and Setup Instructions:
+Clone the Repository:
+git@github.com:iamfarhatsharefi/random-quote-machine.git
+Navigate to the Project Directory:
+cd Random Quote Machine;
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage 🎯
 
-### `npm run eject`
+Step 1: Find and Access the Repository
+Navigate to the Repository:
+Open your web browser and go to GitHub.
+Use the search bar to find the repository you want to use, or navigate directly to the repository's URL.
+Step 2: Clone the Repository 
+Copy the Repository URL:git@github.com:iamfarhatsharefi/random-quote-machine.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+On the repository's main page, click the green "Code" button.
+Copy the URL 
+Clone the Repository to Your Local Machine:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Open your terminal or command prompt.
+Navigate to the directory where you want to clone the repository.
+Replace repository with the name of the cloned repository
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Features ⭐
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Random Quote Generation: Get inspired with a new random quote every time you click the "New Quote" button.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Responsive Design: The app is fully responsive and works seamlessly across different screen sizes, from mobile phones to desktops.
 
-### Code Splitting
+Social Media Integration: Share your favorite quotes directly to Twitter and Tumblr with pre-formatted messages and hashtags.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Beautiful UI: The application features a unique and visually appealing design with custom colors, fonts, and transitions, providing an engaging user experience.
 
-### Analyzing the Bundle Size
+Easy Navigation: A straightforward and intuitive interface makes it easy for users to navigate the app and interact with its features.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Author 👩‍💻
 
-### Making a Progressive Web App
+[Linkedin](https://www.linkedin.com/in/farhat-sharefi-13a101309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+- [Email](sharefifarhat@gmail.com)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
