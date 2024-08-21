@@ -3,24 +3,28 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 const RandomQuoteMachine = () => {
-    const [quote, setQuote] = useState('');
-    const [author, setAuthor] = useState('');
+  const [quote, setQuote] = useState('');
+  const [author, setAuthor] = useState('');
 
-    const fetchQuote = async () => {
-        const response = await fetch('https://api.quotable.io/random');
-        const data = await response.json();
-        setQuote(data.content);
-        setAuthor(data.author);
-    };
+  const fetchQuote = async () => {
+    const response = await fetch('https://api.quotable.io/random');
+    const data = await response.json();
+    setQuote(data.content);
+    setAuthor(data.author);
+  };
 
-    useEffect(() => {
-        fetchQuote();
-    }, []);
+  useEffect(() => {
+    fetchQuote();
+  }, []);
 
-    return (
-        <div id="quote-box">
-            <p id="text">{quote}</p>
-            <p id="author">- {author}</p>
+  return (
+      <div id="quote-box">
+          <p id="text">{quote}</p>
+          <p id="author">
+  - 
+  {author}
+</p>
+
             <button id="new-quote" onClick={fetchQuote}>
                 New Quote
             </button>
