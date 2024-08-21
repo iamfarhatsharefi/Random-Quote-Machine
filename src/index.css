@@ -62,70 +62,70 @@ a:hover {
 }
 
 @media (max-width: 480px) {
-    #quote-box {
-        padding: 1rem;
-    }
+  #quote-box {
+    padding: 1rem;
+  }
 
-    #text {
-        font-size: 1rem;
-    }
+  #text {
+    font-size: 1rem;
+  }
 
-    #author {
-        font-size: 0.75rem;
-        margin-bottom: 1rem;
-    }
+  #author {
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+  }
 
-    button {
-        padding: 0.5rem 1rem;
-    }
+  button {
+    padding: 0.5rem 1rem;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-    #quote-box {
-        padding: 1.5rem;
-    }
+  #quote-box {
+    padding: 1.5rem;
+  }
 
-    #text {
-        font-size: 1.125rem;
-    }
+  #text {
+    font-size: 1.125rem;
+  }
 
-    #author {
-        font-size: 0.875rem;
-    }
+  #author {
+    font-size: 0.875rem;
+  }
 
-    button {
-        padding: 0.75rem 1.5rem;
-    }
+  button {
+    padding: 0.75rem 1.5rem;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   #quote-box {
-        padding: 2rem;
-    }
+    padding: 2rem;
+  }
 
-    #text {
-        font-size: 1.25rem;
-    }
+  #text {
+    font-size: 1.25rem;
+  }
 
-    #author {
-        font-size: 1rem;
-    }
+  #author {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 1024px) {
-    #quote-box {
-        padding: 3rem;
-    }
+  #quote-box {
+    padding: 3rem;
+  }
 
-    #text {
-        font-size: 1.5rem;
-    }
+  #text {
+    font-size: 1.5rem;
+  }
 
-    #author {
-        font-size: 1.125rem;
-    }
+  #author {
+    font-size: 1.125rem;
+  }
 
-    button {
-        padding: 1rem 2rem;
-    }
+  button {
+    padding: 1rem 2rem;
+  }
 }
