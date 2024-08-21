@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client'; // Update this line to import from 'react-dom/client'
 import './index.css';
 
 const RandomQuoteMachine = () => {
@@ -20,12 +20,12 @@ const RandomQuoteMachine = () => {
   return (
     <div id="quote-box">
       <p id="text">{quote}</p>
-      <p id="author">
+        <p id="author">
   -
-              {author}
+        {author}
 </p>
 
-<button
+      <button
   id="new-quote"
   onClick={fetchQuote}
   type="button"
@@ -33,11 +33,11 @@ const RandomQuoteMachine = () => {
   New Quote
 </button>
 
-            <a
-                id="tweet-quote"
-                href={`https://twitter.com/intent/tweet?text=${quote} - ${author}`}
-                target="_blank"
-                rel="noopener noreferrer"
+      <a
+              id="tweet-quote"
+              href={`https://twitter.com/intent/tweet?text=${quote} - ${author}`}
+              target="_blank"
+              rel="noopener noreferrer"
               >
                 Tweet Quote
             </a>
@@ -45,4 +45,5 @@ const RandomQuoteMachine = () => {
   );
 };
 
-ReactDOM.render(<RandomQuoteMachine />, document.getElementById('quote-box'));
+const root = ReactDOM.createRoot(document.getElementById('quote-box'));
+root.render(<RandomQuoteMachine />);
