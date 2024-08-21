@@ -20,7 +20,10 @@ const RandomQuoteMachine = () => {
   return (
     <div id="quote-box">
       <p id="text">{quote}</p>
-      <p id="author">- {author}</p>
+      <p id="author">
+        {'- '}
+        {author}
+      </p>
       <button id="new-quote" onClick={fetchQuote} type="button">
         New Quote
       </button>
