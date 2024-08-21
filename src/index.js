@@ -19,15 +19,15 @@ const RandomQuoteMachine = () => {
 
   return (
     <div id="quote-box">
-        <p id="text">{quote}</p>
-            <p id="author">
+      <p id="text">{quote}</p>
+      <p id="author">
   -
-            {author}
+              {author}
 </p>
 
-<button 
-  id="new-quote" 
-  onClick={fetchQuote} 
+<button
+  id="new-quote"
+  onClick={fetchQuote}
   type="button"
 >
   New Quote
@@ -38,11 +38,11 @@ const RandomQuoteMachine = () => {
                 href={`https://twitter.com/intent/tweet?text=${quote} - ${author}`}
                 target="_blank"
                 rel="noopener noreferrer"
-            >
+              >
                 Tweet Quote
             </a>
-        </div>
-    );
+    </div>
+  );
 };
 
 ReactDOM.render(<RandomQuoteMachine />, document.getElementById('quote-box'));
