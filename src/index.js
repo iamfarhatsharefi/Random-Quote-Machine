@@ -18,16 +18,21 @@ const RandomQuoteMachine = () => {
   }, []);
 
   return (
-      <div id="quote-box">
-          <p id="text">{quote}</p>
-          <p id="author">
-  - 
-  {author}
+    <div id="quote-box">
+        <p id="text">{quote}</p>
+            <p id="author">
+  -
+            {author}
 </p>
 
-            <button id="new-quote" onClick={fetchQuote}>
-                New Quote
-            </button>
+<button 
+  id="new-quote" 
+  onClick={fetchQuote} 
+  type="button"
+>
+  New Quote
+</button>
+
             <a
                 id="tweet-quote"
                 href={`https://twitter.com/intent/tweet?text=${quote} - ${author}`}
