@@ -21,8 +21,11 @@ const RandomQuoteMachine = () => {
     <div id="quote-box">
       <p id="text">{quote}</p>
       <p id="author">
-  - <span>{author}</span>
+  - 
+  <br />
+  {author}
 </p>
+
 
 
       <button
