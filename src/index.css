@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom styles */
+
 body {
     font-family: 'Inter', sans-serif;
     background: linear-gradient(to right, #6a11cb, #2575fc);
@@ -11,30 +11,30 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ensure the body takes up the full viewport height */
+    height: 100vh;
 }
 
 #quote-box {
     background: white;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 600px;
     text-align: center;
-    margin: auto; /* Ensure centering if body flex doesn't work */
+    margin: auto;
 }
 
 #text {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     color: #333;
     margin-bottom: 1rem;
 }
 
 #author {
-    font-size: 1rem;
+    font-size: 0.875rem;
     color: #555;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 button {
@@ -62,15 +62,71 @@ a:hover {
     color: #3b82f6;
 }
 
-/* Responsive design */
-@media (min-width: 640px) {
+@media (max-width: 480px) {
     #quote-box {
-        padding: 3rem;
+        padding: 1rem;
+    }
+
+    #text {
+        font-size: 1rem;
+    }
+
+    #author {
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #quote-box {
+        padding: 1.5rem;
+    }
+
+    #text {
+        font-size: 1.125rem;
+    }
+
+    #author {
+        font-size: 0.875rem;
+    }
+
+    button {
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #quote-box {
+        padding: 2rem;
+    }
+
+    #text {
+        font-size: 1.25rem;
+    }
+
+    #author {
+        font-size: 1rem;
     }
 }
 
 @media (min-width: 1024px) {
     #quote-box {
-        padding: 4rem;
+        padding: 3rem;
+    }
+
+    #text {
+        font-size: 1.5rem;
+    }
+
+    #author {
+        font-size: 1.125rem;
+    }
+
+    button {
+        padding: 1rem 2rem;
     }
 }
