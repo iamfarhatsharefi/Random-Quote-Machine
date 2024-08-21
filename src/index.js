@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ReactDOM from 'react-dom/client'; // Update this line to import from 'react-dom/client'
+import ReactDOM from 'react-dom/client';
 import './index.css';
 
 const RandomQuoteMachine = () => {
@@ -20,10 +20,10 @@ const RandomQuoteMachine = () => {
   return (
     <div id="quote-box">
       <p id="text">{quote}</p>
-        <p id="author">
-  -
-        {author}
+      <p id="author">
+  - <span>{author}</span>
 </p>
+
 
       <button
   id="new-quote"
