@@ -1,17 +1,39 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React, { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-// eslint-disable-next-line import/extensions
-import reportWebVitals from './reportWebVitals';
-/* eslint-enable no-unused-vars */
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-);
+const RandomQuoteMachine = () => {
+    const [quote, setQuote] = useState('');
+    const [author, setAuthor] = useState('');
 
-// Report web vitals metrics
-reportWebVitals();
+    const fetchQuote = async () => {
+        const response = await fetch('https://api.quotable.io/random');
+        const data = await response.json();
+        setQuote(data.content);
+        setAuthor(data.author);
+    };
+
+    useEffect(() => {
+        fetchQuote();
+    }, []);
+
+    return (
+        <div id="quote-box">
+            <p id="text">{quote}</p>
+            <p id="author">- {author}</p>
+            <button id="new-quote" onClick={fetchQuote}>
+                New Quote
+            </button>
+            <a
+                id="tweet-quote"
+                href={`https://twitter.com/intent/tweet?text=${quote} - ${author}`}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Tweet Quote
+            </a>
+        </div>
+    );
+};
+
+ReactDOM.render(<RandomQuoteMachine />, document.getElementById('quote-box'));

@@ -1,36 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
 body {
-  margin: 0;
-  font-family:
-    'Lora', serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #f2f2f2;
-  color: #333; 
-  line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure the body takes up the full viewport height */
 }
 
-code {
-  font-family:
-    'Fira Code',
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
-  background-color: #eaeaea;
-  padding: 0.2em 0.4em;
-  border-radius: 4px;
-  color: #d63384; 
+#quote-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin: auto; /* Ensure centering if body flex doesn't work */
+}
+
+#text {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#author {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+button {
+    transition: background-color 0.3s ease;
+    background-color: #1c74d9;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1a5bbd;
+}
+
+a {
+    transition: color 0.3s ease;
+    color: #1c74d9;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+a:hover {
+    color: #3b82f6;
+}
+
+/* Responsive design */
+@media (min-width: 640px) {
+    #quote-box {
+        padding: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    #quote-box {
+        padding: 4rem;
+    }
 }
