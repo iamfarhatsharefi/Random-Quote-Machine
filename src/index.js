@@ -33,14 +33,15 @@ const RandomQuoteMachine = () => {
   New Quote
 </button>
 
-      <a
-        id="tweet-quote"
-        href={`https://twitter.com/intent/tweet?text=${quote} - ${author}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        >
-                Tweet Quote
-            </a>
+<a
+  id="tweet-quote"
+  href={`https://twitter.com/intent/tweet?text=${quote} - ${author}`}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Tweet Quote
+</a>
+
     </div>
   );
 };
