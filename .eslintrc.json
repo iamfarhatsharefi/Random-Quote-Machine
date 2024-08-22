@@ -19,9 +19,10 @@
     "react/react-in-jsx-scope": "off",
     "import/no-unresolved": "off",
     "no-shadow": "off",
-    "react/jsx-closing-tag-location": "off", // Disables the closing tag location rule
-    "react/jsx-indent": ["error", 2], // Ensures consistent indentation
-    "react/jsx-one-expression-per-line": "off" // If needed, you can turn this off as well
+    "react/jsx-closing-bracket-location": "off", // Disable the rule for closing bracket location
+    "react/jsx-closing-tag-location": "off", // Disable the rule for closing tag location
+    "react/jsx-indent": ["error", 2], // Enforce consistent 2-space indentation
+    "react/jsx-one-expression-per-line": "off" // Disable the one expression per line rule
   },
   "overrides": [
     {
