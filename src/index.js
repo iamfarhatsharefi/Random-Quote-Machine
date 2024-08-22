@@ -47,3 +47,4 @@ function RandomQuoteMachine() {
 
 const root = ReactDOM.createRoot(document.getElementById('quote-box'));
 root.render(<RandomQuoteMachine />); 
+
