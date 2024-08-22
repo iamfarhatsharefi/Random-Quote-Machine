@@ -7,10 +7,10 @@ The Random Quote Machine is a web application that generates random motivational
 ## Demo 📸
 
 
-![Demo](./src/images/ran.png)
-![FreeCodeCamp](./src/images/freecodecamp.png)
+![Demo](./src/images/random%20image.jpg)
+![FreeCodeCamp](./src/images/freecodecamp.PNG)
 <br>
- [Live-link](https://66c0c47db5731c8f34cdbfdf--lucent-fox-8ac766.netlify.app/)
+ [Live-link](https://unrivaled-longma-61cec5.netlify.app)
 
 
 ## Technologies Used 🛠️
