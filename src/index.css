@@ -11,20 +11,17 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100vw;
-  box-sizing: border-box;
 }
 
 #quote-box {
   background: white;
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 600px;
   text-align: center;
   margin: auto;
-  box-sizing: border-box;
 }
 
 #text {
