@@ -29,7 +29,7 @@ const RandomQuoteMachine = () => {
         id="new-quote"
         onClick={fetchQuote}
         type="button"
-      >
+        >
   New Quote
       </button>
 
