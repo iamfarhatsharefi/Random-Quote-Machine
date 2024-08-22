@@ -25,7 +25,7 @@ const RandomQuoteMachine = () => {
         {author}
       </p>
 
-<button
+      <button
   id="new-quote"
   onClick={fetchQuote}
   type="button"
@@ -33,12 +33,12 @@ const RandomQuoteMachine = () => {
   New Quote
 </button>
 
-      <a
-  id="tweet-quote"
-  href={`https://twitter.com/intent/tweet?text=${quote} - ${author}`}
-  target="_blank"
-  rel="noopener noreferrer"
->
+     <a
+        id="tweet-quote"
+        href={`https://twitter.com/intent/tweet?text=${quote} - ${author}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        >
   Tweet Quote
 </a>
 
