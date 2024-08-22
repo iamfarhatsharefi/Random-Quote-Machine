@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-const RandomQuoteMachine = () => {
+function RandomQuoteMachine() {
   const [quote, setQuote] = useState('');
   const [author, setAuthor] = useState('');
 
@@ -29,8 +29,8 @@ const RandomQuoteMachine = () => {
         id="new-quote"
         onClick={fetchQuote}
         type="button"
-        >
-  New Quote
+      >
+        New Quote
       </button>
 
       <a
@@ -38,12 +38,12 @@ const RandomQuoteMachine = () => {
         href={`https://twitter.com/intent/tweet?text=${quote} - ${author}`}
         target="_blank"
         rel="noopener noreferrer">
-  Tweet Quote
+        Tweet Quote
       </a>
 
     </div>
   );
-};
+}
 
 const root = ReactDOM.createRoot(document.getElementById('quote-box'));
 root.render(<RandomQuoteMachine />); 
