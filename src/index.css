@@ -11,6 +11,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 #quote-box {
@@ -20,7 +22,6 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 600px;
-  min-width: 300px;
   text-align: center;
   margin: 0 auto;
   box-sizing: border-box;
@@ -64,7 +65,12 @@ a:hover {
 }
 
 @media (max-width: 480px) {
+  body {
+    padding: 1rem;
+  }
+
   #quote-box {
+    width: 90%;
     padding: 1rem;
   }
 
@@ -84,6 +90,7 @@ a:hover {
 
 @media (min-width: 481px) and (max-width: 767px) {
   #quote-box {
+    width: 80%;
     padding: 1.5rem;
   }
 
@@ -102,6 +109,7 @@ a:hover {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   #quote-box {
+    width: 70%; 
     padding: 2rem;
   }
 
@@ -116,6 +124,7 @@ a:hover {
 
 @media (min-width: 1024px) {
   #quote-box {
+    width: 50%;
     padding: 3rem;
   }
 
